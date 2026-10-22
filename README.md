@@ -20,7 +20,7 @@ sudo apt-get install rdesktop -y
 
 ### Installation:
 ```bash
-git clone https://github.com/bobby-valenzuela/QuickConnect.git
+git clone https://github.com/QuantumZenoSix/QuickConnect.git
 cd QuickConnect/
 chmod +x quickconnect.sh
 sudo mv quickconnect.sh /usr/local/bin/quickconnect
@@ -40,7 +40,7 @@ quickconnect
 __Simple Installation:__  
 Use this installation if you just want to download the script and run it from a path you choose.
 ```bash
-git clone https://github.com/bobby-valenzuela/QuickConnect.git
+git clone https://github.com/QuantumZenoSix/QuickConnect.git
 cd QuickConnect/
 chmod +x quickconnect.sh
 ```
