@@ -33,6 +33,21 @@ sudo mv quickconnect.sh /usr/local/bin/quickconnect
 quickconnect
 ```
 
+_Output_
+```bash
+Which system would you like to connect to?: 
+1) db-server
+2) jumpbox
+3) legacy-box
+4) webserver
+5) *
+#? 1
+
+Selected db-server. Connecting...
+
+(then runs: ssh db-server)
+```
+
 <br />
 
 <br>
@@ -94,6 +109,32 @@ Include the `-r` option to connect to machines via RDP.
 Usage:
 ```bash
 bash quickconnect.sh -r
+```
+
+_Sample output_
+```bash
+Host webserver
+    HostName 192.168.1.10
+    User admin
+    Port 22
+
+Host db-server
+    HostName db.example.com
+    User dbadmin
+    Port 2222
+    # Pass secretpassword123
+
+Host RDP-windows-pc
+    HostName 10.0.0.50
+    User bob:::mypassword
+    Port 3389
+
+Host jumpbox
+    HostName jump.example.com
+    User jumper
+
+Host *
+    ServerAliveInterval 60
 ```
 
 _Note: Connecting via RDP requires xfreerdp and rdesktop to be installed._
